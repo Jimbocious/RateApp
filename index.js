@@ -1,7 +1,7 @@
 let app = require("express")();
 
 app.get("/",(req,res) => {
-    res.send ("<h1>Main page</h1>");
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(80);
